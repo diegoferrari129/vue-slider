@@ -39,9 +39,12 @@ createApp ({
             }
         },
         nextImage() {
+            // verifico il valore dell'indice
             if (this.i == this.slides.length -1) {
+                // imposto l'indice a 0
                 this.i = 0;
             } else {
+                // lo incremento
                 this.i++;
             }
         },
