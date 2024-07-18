@@ -1,13 +1,10 @@
-
-
-console.log(slides);
-
 // salvo in una variabile la funzione per utilizzare vue
 const {createApp} = Vue;
 //invoco la funzione per inizializzare l'instanza di vue
 createApp ({
     data() {
         return {
+            i: 0,
             slides: [
                 {
                     image: 'img/01.webp',
