@@ -29,6 +29,22 @@ createApp ({
                 }
             ]
         }
+    },
+    methods: {
+        prevImage() {
+            if (this.i == 0) {
+                this.i = this.slides.length -1;
+            } else {
+                this.i--;
+            }
+        },
+        nextImage() {
+            if (this.i == this.slides.length -1) {
+                this.i = 0;
+            } else {
+                this.i++;
+            }
+        },
     }
 // invoco il metodo per connettere l'instanza al tag html
 }).mount('#app');
